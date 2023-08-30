@@ -1,3 +1,5 @@
+"use client";
+
 import { getProjects } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,7 +27,7 @@ export default async function Home() {
           <Link
             href={`projects/${project.slug}`}
             key={project._id}
-            className="border border-gray-500 rounded-lg p-3 text-center hover:scale-105 hover:border-blue-500 transition"
+            className="border border-gray-400 p-3 text-center hover:scale-105 hover:border-blue-500 transition"
           >
             {project.image && (
               <Image
@@ -33,7 +35,7 @@ export default async function Home() {
                 alt={project.name}
                 width={300}
                 height={40}
-                className="h-60 w-200 object-contain rounded-lg border border-gray-500"
+                className="h-60 w-200 object-contain border border-gray-400"
               />
             )}
             <div className="font-extrabold text-gray-700 text-2xl py-2">
