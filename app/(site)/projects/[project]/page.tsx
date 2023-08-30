@@ -41,7 +41,7 @@ export default async function Project({ params }: Props) {
         alt={project2.name}
         height={400}
         width={400}
-        className="mt-10 border-2 border-gray-700 object-cover rounded-xl"
+        className="mt-10 border-[1.5px] border-gray-400 object-cover w-full"
       />
     </div>
   );
