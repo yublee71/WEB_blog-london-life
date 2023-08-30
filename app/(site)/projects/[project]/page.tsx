@@ -20,7 +20,7 @@ export default async function Project({ params }: Props) {
   return (
     <div>
       <header className="flex items-center justify-between">
-        <h1 className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-5xl drop-shadow-lg font-extrabold">
+        <h1 className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-2xl md:text-5xl drop-shadow-lg font-extrabold">
           {project2.name}
         </h1>
         <a
@@ -28,12 +28,12 @@ export default async function Project({ params }: Props) {
           title="View my project"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-pink-500 hover:text-pink-100 transition"
+          className="bg-gray-100 rounded-lg text-[3px] md:text-base text-gray-500 font-bold py-2 px-2 md:py-3 md:px-4 whitespace-nowrap hover:bg-pink-500 hover:text-pink-100 transition"
         >
           View Project
         </a>
       </header>
-      <div className="text-lg text-gray-700 mt-5">
+      <div className="text-xs md:text-lg text-gray-700 mt-5">
         <PortableText value={project2.content} />
       </div>
       <Image
