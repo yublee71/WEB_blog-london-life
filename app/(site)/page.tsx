@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export default async function Home() {
   const projects = await getProjects();
+  const revalidate = 60;
   return (
     <div>
       <h1 className="text-4xl md:text-7xl font-extrabold">
