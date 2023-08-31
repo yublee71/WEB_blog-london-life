@@ -1,5 +1,3 @@
-"use client";
-
 import { getProject } from "@/sanity/sanity-utils";
 import project from "@/sanity/schemas/project-schema";
 import { PortableText } from "@portabletext/react";
